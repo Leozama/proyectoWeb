@@ -1,0 +1,10 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editores
+*.log
+*.tmp
+*.swp
+*.sublime-workspace
+.vscode/
