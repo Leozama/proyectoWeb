@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>contacto</title>
+		<link rel="stylesheet" href="../../shared/style.css" />
+	</head>
+
+	<body>
+		<header class="header-contacto">
+			<h1 class="info-contact">Información de contacto</h1>
+			<nav class="nav-contact">
+				<a class="principal" href="../../index.html">Página principal</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="contenedor-fieldset">
+				<fieldset class="contenedor-Forms">
+					<form id="formulario" action="#" method="post" class="forms">
+						<legend class="titulo-contacto-form">Formulario de contacto</legend>
+						<label for="nombre">Nombre completo:</label>
+						<input class="text" id="nombre" name="nombre" required />
+
+						<label for="email">Correo electrónico:</label>
+						<input class="email" id="email" name="email" required />
+
+						<label for="tema">Tema del mensaje:</label>
+						<select class="msj" name="tema">
+							<option value="">Seleccione un tema</option>
+							<option value="fb">feedback</option>
+							<option value="info">Información</option>
+							<option value="news">noticia</option>
+							<option value="ht">hate</option>
+						</select>
+
+						<label for="mensaje">Escriba su mensaje:</label>
+						<textarea class="mensaje" name="mensaje" rows="4"></textarea>
+						<div class="boton">
+							<button class="boton-contact" type="submit">Enviar</button>
+						</div>
+					</form>
+				</fieldset>
+			</section>
+		</main>
+
+		<footer class="footer-contact">
+			<address>Contacto: lglezama.23@est.ucab.edu.ve</address>
+		</footer>
+
+		<div class="contenedor-chat">
+			<a href="" class="chat">Chat</a>
+		</div>
+		<script src="../../shared/script.js"></script>
+	</body>
+</html>

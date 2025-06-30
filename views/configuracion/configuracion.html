@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>configuracion</title>
+		<link rel="stylesheet" href="../../shared/style.css" />
+	</head>
+
+	<body>
+		<header class="header-confi">
+			<h1 class="titulo-confi">Configuración de perfil</h1>
+			<nav class="nav-confi">
+				<a href="../../index.html" class="confi-principal">Página principal</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="contenedor-main-confi">
+				<fieldset class="confi-perfil">
+					<form
+						id="formulario"
+						class="contenedor-forms"
+						action="#"
+						method="post"
+					>
+						<legend>Configuración de perfil</legend>
+						<label for="foto">Elegir foto de perfil:</label>
+						<input type="file" id="archivo" name="archivo" accept="image/png" />
+
+						<label for="fecha">Fecha de nacimiento:</label>
+						<input type="date" id="fecha" name="fecha" />
+
+						<label>Género:</label>
+						<label
+							><input type="radio" name="genero" value="hombre" /> Hombre</label
+						>
+						<label
+							><input type="radio" name="genero" value="mujer" /> Mujer</label
+						>
+						<label
+							><input type="radio" name="genero" value="otro" /> Otro</label
+						>
+
+						<label for="color">Color del perfil:</label>
+						<input type="color" id="color" name="color" value="#ff0000" />
+						<div class="boton">
+							<button class="boton-confi" type="submit">Guardar</button>
+						</div>
+					</form>
+				</fieldset>
+
+				<fieldset class="contraseña-perfil">
+					<form class="contenedor-forms" action="#" method="post">
+						<legend>Cambiar Contraseña</legend>
+						<label for="nombre">Nombre de usuario:</label>
+						<input
+							type="text"
+							id="nombre"
+							name="nombre"
+							placeholder="Ej: Juan Pérez"
+						/>
+
+						<label for="password">Antigua Contraseña:</label>
+						<input
+							type="password"
+							id="oldPassword"
+							name="old password"
+							minlength="8"
+						/>
+
+						<label for="password">Nueva Contraseña:</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							minlength="8"
+						/>
+						<div class="boton">
+							<button id="buton" class="boton-confi" type="submit">
+								Guardar
+							</button>
+						</div>
+					</form>
+				</fieldset>
+			</section>
+
+			<section class="contenedor-tabla">
+				<h2>Tabla de usuarios</h2>
+				<div class="tabla-div">
+					<table class="tabla">
+						<thead>
+							<tr>
+								<th>Foto de perfil</th>
+								<th>Correo</th>
+								<th>Nombre</th>
+								<th>Apellido</th>
+								<th>Cedula</th>
+								<th>Fecha de nacimiento</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img
+										class="perfil-foto"
+										src="../../assets/helmetless.webp"
+										alt="Foto de perfil"
+										width="225px"
+										height="225px"
+									/>
+								</td>
+								<td>michimark.realidadesparalelas@gmail.com</td>
+								<td>Michimark</td>
+								<td>Grayson</td>
+								<td>30730329</td>
+								<td>22/01/1987</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										class="perfil-foto"
+										src="../../assets/mom.webp"
+										alt="Foto de perfil"
+										width="225px"
+										height="225px"
+									/>
+								</td>
+								<td>michimark.multiverso@gmail.com</td>
+								<td>Michimark</td>
+								<td>Grayson</td>
+								<td>30730329</td>
+								<td>22/01/1987</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										class="perfil-foto"
+										src="../../assets/omni.webp"
+										alt="Foto de perfil"
+										width="225px"
+										height="225px"
+									/>
+								</td>
+								<td>michimark.viajerodimensional@gmail.com</td>
+								<td>Michimark</td>
+								<td>Grayson</td>
+								<td>30730329</td>
+								<td>22/01/1987</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										class="perfil-foto"
+										src="../../assets/siniestro.webp"
+										alt="Foto de perfil"
+										width="225px"
+										height="225px"
+									/>
+								</td>
+								<td>michimark.arteinfinito@gmail.com</td>
+								<td>Michimark</td>
+								<td>Grayson</td>
+								<td>30730329</td>
+								<td>22/01/1987</td>
+							</tr>
+							<tr>
+								<td>
+									<img
+										class="perfil-foto"
+										src="../../assets/viltrum.webp"
+										alt="Foto de perfil"
+										width="225px"
+										height="225px"
+									/>
+								</td>
+								<td>michimark.quantumleap@gmail.com</td>
+								<td>Michimark</td>
+								<td>Grayson</td>
+								<td>30730329</td>
+								<td>22/01/1987</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-confi">
+			<address>Contacto: lglezama.23@est.ucab.edu.ve</address>
+		</footer>
+
+		<div class="contenedor-chat">
+			<a href="" class="chat">Chat</a>
+		</div>
+
+		<script src="../../shared/script.js"></script>
+	</body>
+</html>
